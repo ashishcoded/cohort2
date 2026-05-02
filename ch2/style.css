@@ -2,53 +2,62 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+   
 }
 
 html, body{
     height: 100%;
     width: 100%;
 }
-
 main{
-    background-color: #0C1014;
     height: 100%;
     width: 100%;
+    background-color: #0C1014;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-h1{
-    font-size: 100px;
-    background-color: orangered;
-    padding: 10px 50px;
+.card{
+    
+    width: 200px;
+    background-color: white;
+    padding: 20px;
     border-radius: 10px;
-    color: white;
+    position: absolute;
 }
-button{
-    font-size: 25px;
-    padding: 10px 15px;
-    font-weight: 700;
-    color: white;
-    margin-top: 20px;
-    background-color: #941311;
-    border-radius: 10px;
+.card div{
+    position: relative;
+    overflow: hidden;
 }
 
+.card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.card h2{
+    font-size: 20px;
+    text-align: center;
+    
+    
+}
+.card i{
+    
+    color: transparent;
+    background-image: url(https://tse2.mm.bing.net/th/id/OIP.qqxhLa6vJKsqj2dxE8abrgHaFS?r=0&rs=1&pid=ImgDetMain&o=7&rm=3);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+   opacity: 0;
+   font-size: 60px;
+   transform: translate(-50%, -50%) scale(0) rotate(-60deg);
+   transition: all cubic-bezier(.65,1,.77,1.44) 0.4s;
+   
 
-main #fullname{
-    color: white;
-    font-size: 30px;
-    
-}
-main #trophies{
-    color: white;
-    font-size: 30px;
-    
-}
-main #captain{
-    color: white;
-    font-size: 30px;
-    
 }

@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    color: white;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    cursor: none;
+}
+main{
+    background-color: #0C1014;
+    height: 200%;
+    width: 100%;
+}
+#cursor{
+    height: 60px ;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    
+
+}

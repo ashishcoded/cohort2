@@ -1,0 +1,97 @@
+@font-face {
+    font-family: VCC;
+    src: url(./VFCFantomen.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+
+}
+
+@keyframes borderAnimate {
+    from {
+        --rotate: 0deg;
+    }
+
+    to {
+        --rotate: 360deg;
+    }
+}
+
+.box {
+    max-width: 300px;
+    padding-inline: 10px;
+    padding-bottom: 10px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    gap: 10px;
+    /* box-shadow: 0 0 35px red; */
+    border-radius: 15px;
+    background: linear-gradient(rgb(0, 0, 0)) padding-box,
+        conic-gradient(from var(--rotate), rgb(0, 0, 0), red, black) border-box;
+    border: 0px solid transparent;
+    animation: borderAnimate 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+    transition: all 0.3s linear;
+    box-shadow: 0 0 0 red;
+    text-shadow: 0 0 0 red;
+
+}
+
+.box h1 {
+    font-family: VCC;
+    font-weight: 300;
+    letter-spacing: 1px;
+    scale: 1;
+    
+
+}
+
+.box img {
+    width: 100%;
+}
+
+.box:hover {
+    animation-play-state: running;
+    border-width: 5px;
+    box-shadow: 0 0 50px red;
+    color: red;
+    text-shadow: 0 0 10px red;
+
+}
+
+.box:hover h1{
+    scale : 1.1
+
+}
+
